@@ -11,7 +11,7 @@
 }
 
 header {
-    position: absolute;
+    position: fixed;
     width: 100vw;
     top: 0;
     z-index: 100;
@@ -22,7 +22,6 @@ header {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);*/
     padding: 10px;
     font-family: "Rubik", sans-serif;
-    font-size: 10px;
 }
 
 
@@ -60,6 +59,7 @@ section {
     float: right;
     font-size: 25px;
     position: relative;
+    margin-right: 100px;
     
 }
 
@@ -117,7 +117,7 @@ section {
 .photo{
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 50px;
 }
 
 .me {
@@ -151,7 +151,7 @@ section {
     width: 60rem;
     top: 0;
     right: 0;
-    margin-top: -150px;
+    margin-top: -200px;
     margin-left: auto;
     max-width: 55rem;
 }
@@ -215,21 +215,118 @@ section {
     initial-value: 0turn;
   }
 
+  .my-projects {
+    font-size: 3.5rem;
+    background: -webkit-linear-gradient(75deg, #7f00ff, #7f00ff, #e100ff, #e100ff, #e100ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+  }
+
+  .project-display {
+      display: flex;
+      margin: auto;
+      text-align: center;
+      justify-content: center;
+  }
+  
+  .projects-container {
+      align-content: center;
+      text-align: center;
+      width: 100vw;
+  }
+
+.projeto-1,
+.projeto-2,
+.projeto-3 {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  width: 25rem;
+  height: 30rem;
+  padding: 20px;
+  margin: 20px; 
+  text-align: center;
+  border-radius: 30px;
+  --border-size: 3px;
+  --border-angle: 0turn;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  animation: bg-spin 1.5s linear infinite;
+}
+ 
+  .projeto-1::before,
+  .projeto-2::before,
+  .projeto-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    padding: var(--border-size);
+    background-image: conic-gradient(
+        from var(--border-angle),
+        #fff,
+        #fff 50%,
+        #fff
+      ),
+      conic-gradient(
+        from var(--border-angle),
+        transparent 20%,
+        #7f00ff,
+        #e100ff
+      );
+    background-origin: border-box;
+    background-clip: content-box, border-box; 
+    z-index: -1;
+  }
+
+.golearn,
+.starfitness,
+.banco-digital {
+    width: 100%;
+    margin: 0 auto;
+}
 
 .copy {
     font-family: "Poppins", sans-serif;
-    background-color: gray;
-    height: 10vh;
     text-align: center;
     align-content: center;
-    background-color: #f9f9fb;
+    background-color: black;
     font-size: 1rem;
+    color: white;
+    margin: 50px;
 }
 
-.contact-me {
-    background-color: black;
+.copy h2 {
+    font-size: 3.5rem;
+    background: -webkit-linear-gradient(75deg, #7f00ff, #7f00ff, #e100ff, #e100ff, #e100ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icons-footer {
+    font-size: 15vh;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.icons-footer i {
+    color: white;
+    padding: 5px;
+    transition: .3s ease;
+}
+
+.icons-footer i:hover {
+    transform: scale(0.90);
+    color: #cc2ae3;
+    cursor: pointer;
 }
 
 footer {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: black;
+    height: 60vh;
 }
+
