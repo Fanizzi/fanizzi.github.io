@@ -254,6 +254,14 @@ body {
   z-index: 1;
   background-color: white;
   animation: bg-spin 1.5s linear infinite;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.projeto-1:hover,
+.projeto-2:hover,
+.projeto-3:hover {
+    transform: scale(0.95);
 }
  
   .projeto-1::before,
