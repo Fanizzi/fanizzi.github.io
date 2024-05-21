@@ -30,10 +30,13 @@ span {
 }
 
 .map-container {
-    display: flex;
+
     justify-content: center;
+    padding: 7rem 7% 2rem;
+    text-align: center;
 }
 
-.map {
+.map-container iframe {
+    width: 100%;
     border-radius: 15px;
 }

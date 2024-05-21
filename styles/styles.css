@@ -139,7 +139,7 @@ body {
     align-content: start;
 }
 
-.about-container {
+.about-text {
     min-height: 80vh;
     padding: 7rem 7% 2rem;
     display: flex;
@@ -151,8 +151,29 @@ body {
     margin-left: auto;
     max-width: 55rem;
 }
- 
-.about-container h2 {
+
+.about-display {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.astronaut {
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 100px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.about-text h2 {
     font-size: 4rem;
     justify-content: flex-start; 
     background: -webkit-linear-gradient(75deg, #7f00ff, #7f00ff, #e100ff, #e100ff, #e100ff);
@@ -160,7 +181,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.about-container p {
+.about-text p {
     font-size: 24px;
     padding: 50px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -173,7 +194,7 @@ body {
     animation: bg-spin 1.5s linear infinite;
   }
   
-  .about-container p::before {
+  .about-text p::before {
     content: "";
     position: absolute;
     top: 0;
