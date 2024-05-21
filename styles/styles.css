@@ -14,7 +14,7 @@ header {
     overflow-x: hidden;
     position: fixed;
     width: 100vw;
-    height: 12vh;
+    height: 10vh;
     display: flex;
     z-index: 100;
     justify-content: space-around;
