@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #f9f9fb;  
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #cc2ae3;
+}
+
+.logo {
+    float: left;
+    background: -webkit-linear-gradient(75deg, #7f00ff, #7f00ff, #e100ff, #e100ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.navbar-links {
+    color: #cc2ae3;
+    float: right;
+}
+
+.navbar-links ul {
+    list-style: none;
+    margin: auto ;
+    padding: 0;
+}
+
+.navbar-links li {
+    display: inline-block;
+    margin: 5px;
+    margin-right: 30px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+    font-size: 25px;
+}
+
+.navbar-links a {
+    color:  #cc2ae3;
+    text-decoration: none;
+}
+
+.navbar-links li:hover {
+    color: #2f0be9;
+    border-bottom-color: #2f0be9;
+}
+
+.fatec-container,
+.dsm-container {
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 7% 2rem;
+
+}
+
+span {
+    background: -webkit-linear-gradient(75deg, #7f00ff, #7f00ff, #e100ff, #e100ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fatec-container p,
+.dsm-container p {
+    text-align: right;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+}
+
+.map {
+    border-radius: 15px;
+}

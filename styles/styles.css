@@ -29,8 +29,7 @@ a {
 
 body {
     overflow-x: hidden;
-    background-color: #f9f9fb;
-    
+    background-color: #f9f9fb;  
 }
 
 ::-webkit-scrollbar {
