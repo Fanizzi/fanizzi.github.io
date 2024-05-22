@@ -53,17 +53,17 @@ body {
 .navbar-links {
     color: #cc2ae3;
     float: right;
+    margin: auto;
 }
 
 .navbar-links ul {
     list-style: none;
-    margin: auto ;
-    padding: 0;
+    margin: auto;
 }
 
 .navbar-links li {
     display: inline-block;
-    margin: 5px;
+    margin: auto;
     margin-right: 30px;
     border-bottom: 2px solid transparent;
     transition: border-bottom-color 0.3s ease;
@@ -140,36 +140,50 @@ body {
 }
 
 .about-text {
-    min-height: 80vh;
+    min-height: 60vh;
     padding: 7rem 7% 2rem;
     display: flex;
     flex-direction: column;
     width: 60rem;
-    top: 0;
-    right: 0;
-    margin-top: -200px;
-    margin-left: auto;
-    max-width: 55rem;
+    min-width: 55vh;
 }
 
 .about-display {
     display: flex;
     margin: auto;
-    text-align: center;
     justify-content: center;
 }
 
+.about-img {
+    display: flex;
+    margin-left: 100px;
+}
+
+.planet {
+    width: 26rem;
+    animation-name: floating-planet;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
 
 .astronaut {
-    animation-name: floating;
+    width: 16rem;
+    animation-name: floating-astronaut;
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 
-@keyframes floating {
+@keyframes floating-astronaut {
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0, 100px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+@keyframes floating-planet {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 50px); }
     100%   { transform: translate(0, -0px); }   
 }
 
