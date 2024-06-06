@@ -261,8 +261,17 @@ body {
       justify-content: center;
   }
 
+  .project-display h2 {
+      margin-bottom: 20px;
+  }
+
+  .project-display img {
+      border-radius: 10px;
+  }
+
   .project-display a {
       text-decoration: none;
+      color: black;
   }
   
   .projects-container {
@@ -291,6 +300,16 @@ body {
   transition: all 0.3s ease;
   cursor: pointer;
 }
+
+.projeto-1 i,
+.projeto-2 i,
+.projeto-3 i {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
 
 .projeto-1:hover,
 .projeto-2:hover,
